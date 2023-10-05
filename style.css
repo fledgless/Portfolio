@@ -154,6 +154,7 @@ header {
   position: fixed;
   width: 100%;
   height: 5vh;
+  background-color: darkcyan;
 }
 /* appel par nom de balise */
 header > nav {
@@ -170,6 +171,13 @@ header > nav > ul.liste {
   justify-content: space-around;
 }
 
+header > nav > ul > li > a.liens {
+  font-size: larger;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
 header > nav > i.fa-bars {
   display: none;
 }
@@ -177,6 +185,9 @@ header > nav > i.fa-bars {
 section {
   height: 400px;
   padding-top: 5vh;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: darkcyan;
 }
 
 /* media query */
