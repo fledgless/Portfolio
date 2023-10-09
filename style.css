@@ -148,13 +148,13 @@ footer {
 div#container {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-rows: 2fr 8fr 1fr;
 }
 header {
   position: fixed;
   width: 100%;
   height: 5vh;
-  background-color: darkcyan;
+  background-color: #A2C3A4;
 }
 /* appel par nom de balise */
 header > nav {
@@ -172,10 +172,10 @@ header > nav > ul.liste {
 }
 
 header > nav > ul > li > a.liens {
-  font-size: larger;
+  font-size: 24px;
   text-decoration: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
+  font-family: 'Prompt';
+  color: black;
 }
 
 header > nav > i.fa-bars {
@@ -186,8 +186,8 @@ section {
   height: 400px;
   padding-top: 5vh;
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: darkcyan;
+  font-family: 'Prompt';
+  color: black ;
 }
 
 /* media query */
@@ -202,7 +202,7 @@ section {
     position: fixed;
     width: 100%;
     flex-direction: column;
-    background: lightgrey;
+    background: #A2C3A4;
     top: 0;
     left: 0;
   }
