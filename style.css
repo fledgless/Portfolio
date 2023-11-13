@@ -144,6 +144,10 @@ footer {
   padding: 5px;
 }
 
+main {
+  background-color: #C4F1BE;
+}
+
 /* appel par id */
 div#container {
   display: grid;
@@ -185,7 +189,7 @@ header > nav > i.fa-bars {
 section {
   height: 400px;
   padding-top: 5vh;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Prompt';
   color: black ;
 }
@@ -211,4 +215,21 @@ section {
     flex-direction: column;
     display: flex;
   }
+}
+
+h2 {
+  font-size: 32px;
+  font-family: 'Prompt';
+  /* Bebas Neue */
+  color: #406E8E ;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Prompt';
+  /* Bebas Neue */
+  color: black ;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
