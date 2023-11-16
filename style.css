@@ -152,8 +152,9 @@ main {
 div#container {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 2fr 8fr 1fr;
+  /* grid-template-rows: 2fr 8fr; */
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -161,13 +162,12 @@ header {
   background-color: #406E8E;
 }
 
-/* footer {
-  position: absolute;
+footer {
   bottom: 0;
   width: 100%;
   height: 5vh;
   background-color: #406E8E;
-} */
+}
 /* appel par nom de balise */
 header > nav {
   display: flex;
@@ -262,11 +262,13 @@ section {
     display: 	flex;
     flex-direction: column;
   }
-  #a-propos > h2 {
+  #a-propos > h2,
+  #experiences > h2 {
     margin: 20px;
     text-align: center;
   }
-  #a-propos > p {
+  #a-propos > p,
+  #experience {
     margin: 20px;
   }
 }
