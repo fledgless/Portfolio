@@ -144,17 +144,29 @@ footer {
   padding: 5px;
 }
 
+main {
+  background-color: black;
+}
+
 /* appel par id */
 div#container {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 2fr 8fr 1fr;
+  /* grid-template-rows: 2fr 8fr; */
 }
+
 header {
   position: fixed;
   width: 100%;
+  height: 10vh;
+  background-color: #406E8E;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
   height: 5vh;
-  background-color: #A2C3A4;
+  background-color: #406E8E;
 }
 /* appel par nom de balise */
 header > nav {
@@ -174,8 +186,8 @@ header > nav > ul.liste {
 header > nav > ul > li > a.liens {
   font-size: 24px;
   text-decoration: none;
-  font-family: 'Prompt';
-  color: black;
+  font-family: 'Bebas Neue';
+  color: white;
 }
 
 header > nav > i.fa-bars {
@@ -183,11 +195,45 @@ header > nav > i.fa-bars {
 }
 
 section {
-  height: 400px;
+  height: 600px;
   padding-top: 5vh;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Prompt';
-  color: black ;
+  color: white ;
+}
+
+#a-propos {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px;
+  margin-top: 50px;
+}
+
+#experience > h3 {
+  margin: 20px;
+}
+
+#experiences {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+#a-propos > h2,
+#experiences > h2 {
+  margin: 100px;
+}
+
+#a-propos > p {
+  margin: 50px;
+  text-align: justify;
 }
 
 /* media query */
@@ -202,7 +248,7 @@ section {
     position: fixed;
     width: 100%;
     flex-direction: column;
-    background: #A2C3A4;
+    background: #406E8E;
     top: 0;
     left: 0;
   }
@@ -211,4 +257,50 @@ section {
     flex-direction: column;
     display: flex;
   }
+  #a-propos,
+  #experiences {
+    display: 	flex;
+    flex-direction: column;
+  }
+  #a-propos > h2,
+  #experiences > h2 {
+    margin: 20px;
+    text-align: center;
+  }
+  #a-propos > p,
+  #experience {
+    margin: 20px;
+  }
 }
+
+h1 {
+  margin-top: 200px;
+  margin-bottom: 10px;
+  font-size: 56px;
+  color: #406E8E;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
+h2 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-family: 'Bebas Neue';
+  /* Bebas Neue */
+  color: #406E8E ;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Bebas Neue';
+  color: white ;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  color: white;
+}
+
