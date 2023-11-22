@@ -10,13 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Cameron | Portfolio</title>
-    <script>
-        function openMenu() {
-            let nav = document.querySelector("nav")
-            nav.classList.toggle("open")
-        }
- 
-    </script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -74,7 +68,20 @@
         </section>
         <section id="projets">
             <h2>Projets</h2>
-        </section>
+            <div id="projet">
+                <div id="projet1">
+                    <img src="Portfolio.png" alt="Image projet 1">
+                    <h3><a target="_blank" href="https://github.com/fledgless/Portfolio">Ce portfolio</a></h3>
+                </div>
+                <div id="projet2">
+                    <img src="#" alt="Image projet 2">
+                    <h3>Projet n°2</h3>
+                </div>    
+                <div id="projet3">
+                    <img src="#" alt="Image projet 3">
+                    <h3>Projet °3</h3>
+                </div>
+            </section>
         <section id="contact">
             <h2>Contact</h2>
         </section>
