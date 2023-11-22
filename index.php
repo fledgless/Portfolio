@@ -47,7 +47,7 @@
             <h2 style="color: white;">Développeur web et web mobile</h2>
             <div id="reseaux">
                 <a target="_blank" href="https://github.com/fledgless"><i class="fa-brands fa-github fa-xl" style="color: #406e8e;"></i></a>
-                <i class="fa-brands fa-linkedin-in fa-xl" style="color: #406e8e;"></i>
+                <a target="_blank" href="https://www.linkedin.com/in/cameron-cardinal-a4158b231/"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #406e8e;"></i></a>
                 <i class="fa-solid fa-envelope fa-xl" style="color: #406e8e;"></i>
             </div>
         </section>

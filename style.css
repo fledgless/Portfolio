@@ -260,8 +260,10 @@ hr {
 
 img {
   height: 175px;
+  width: 350px;
   display: block;
   margin-bottom: 15px;
+  border: solid white;
 }
 
 #projet1,
