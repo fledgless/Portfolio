@@ -195,8 +195,9 @@ header > nav > i.fa-bars {
 }
 
 section {
-  height: 600px;
+  height: fit-content;
   padding-top: 5vh;
+  width: 100%;
   font-size: 16px;
   font-family: 'Prompt';
   color: white ;
@@ -210,6 +211,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  height: 600px;
 }
 
 #reseaux {
@@ -279,6 +282,9 @@ img {
 
 #projet {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center
 }
 
 #projets {
@@ -310,6 +316,7 @@ img {
   }
   header > nav > i.fa-bars {
     display: block;
+    cursor: pointer;
   }
   header > nav.open {
     position: fixed;
@@ -345,17 +352,14 @@ img {
   #projet1,
   #projet2,
   #projet3 {
-    margin: 0;
+    margin: 20px;
   }
   hr {
     display: none;
   }
   img {
-    height: 120px;
-    margin: 0;
-  }
-  section {
-    height: 700px;
+    height: 150px;
+    width: 300px;
   }
   #portfolio > h2,
   #a-propos > h2,
