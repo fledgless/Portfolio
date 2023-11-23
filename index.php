@@ -47,7 +47,7 @@
             <h2 style="color: white;">Développeur web et web mobile</h2>
             <div id="reseaux">
                 <a target="_blank" href="https://github.com/fledgless"><i class="fa-brands fa-github fa-xl" style="color: #406e8e;"></i></a>
-                <i class="fa-brands fa-linkedin-in fa-xl" style="color: #406e8e;"></i>
+                <a target="_blank" href="https://www.linkedin.com/in/cameron-cardinal-a4158b231/"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #406e8e;"></i></a>
                 <i class="fa-solid fa-envelope fa-xl" style="color: #406e8e;"></i>
             </div>
         </section>
@@ -67,10 +67,10 @@
             <div id="experience">
                 <h3>Expérience n°1</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime placeat eos alias maiores quae, necessitatibus, doloribus labore eligendi consectetur perspiciatis voluptatum. Sunt exercitationem omnis iste excepturi, similique voluptatibus eius itaque!</p>   
-                <hr width="900" size="1"/>
+                <!-- <hr width="900" size="1"/> -->
                 <h3>Expérience n°2</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime placeat eos alias maiores quae, necessitatibus, doloribus labore eligendi consectetur perspiciatis voluptatum. Sunt exercitationem omnis iste excepturi, similique voluptatibus eius itaque!</p>    
-                <hr width="900" size="1"/>
+                <!-- <hr width="900" size="1"/> -->
                 <h3>Expérience n°3</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime placeat eos alias maiores quae, necessitatibus, doloribus labore eligendi consectetur perspiciatis voluptatum. Sunt exercitationem omnis iste excepturi, similique voluptatibus eius itaque!</p>  
             </div>
@@ -83,12 +83,10 @@
                     <img src="Portfolio.png" alt="Image projet 1">
                     <h3><a target="_blank" href="https://github.com/fledgless/Portfolio">Ce portfolio</a></h3>
                 </div>
-                <hr width="1" size="400"/>
                 <div id="projet2">
                     <img src="#" alt="Image projet 2">
                     <h3>Projet n°2</h3>
-                </div>
-                <hr width="1" size="400"/>    
+                </div>    
                 <div id="projet3">
                     <img src="#" alt="Image projet 3">
                     <h3>Projet °3</h3>
