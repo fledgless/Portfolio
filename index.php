@@ -21,9 +21,12 @@
     <header>
         <nav>
             <!-- id = unique (1 seul par page ) -->
-            <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+            <i onclick="openMenu()" id="hamburger" class="fa-solid fa-bars"></i>
             <ul class="liste">
                 <!-- plusieurs classes possibles -->
+                <li>
+                    <a onclick="openMenu()" class="liens" href="#portfolio">Accueil</a>
+                </li>
                 <li>
                     <a onclick="openMenu()" class="liens" href="#a-propos">A propos</a>
                 </li>
@@ -95,18 +98,36 @@
         <section id="contact">
             <h2>Contact</h2>
             <hr width="500" size="1"/>
-            <form action="#" method="post">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="submit" value="Send">
-            </form>
+            <div class="form"> 
+                <div id="error_message"></div> 
+                <form action="" 
+                    id="myform" 
+                    onsubmit="return validate();"> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                            placeholder="Nom" 
+                            id="name"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                            placeholder="Sujet" 
+                            id="subject"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                            placeholder="Adresse mail" 
+                            id="email"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <textarea placeholder="Message" 
+                                id="message"> 
+                        </textarea> 
+                    </div> 
+                    <div class="btn"> 
+                        <input type="submit"> 
+                    </div> 
+                </form> 
+            </div> 
         </section>
     </main>
     <!-- notre pied de page -->
