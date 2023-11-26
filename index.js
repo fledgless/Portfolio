@@ -1,7 +1,18 @@
-function openMenu() {
-    let nav = document.querySelector("nav");
-    nav.classList.toggle("open"); 
-}
+// toggle nav sur hamburger
+let nav = document.querySelector("nav");  
+let hamburger =  document.querySelector("#hamburger");
+hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        
+});
+
+// toggle nav sur liens
+let liens = document.querySelectorAll(".liens");
+liens.forEach((liens) => {
+    liens.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    })    
+});
  
 // fonction pour vérifier le formulaire de contact
 function validate() { 

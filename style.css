@@ -349,9 +349,12 @@ img {
     display: 	flex;
     flex-direction: column;
   }
+  #portfolio > h2,
   #a-propos > h2,
-  #experiences > h2 {
-    margin: 5vh;
+  #experiences > h2,
+  #projets > h2,
+  #contact > h2 {
+    margin-bottom: 10px;
     text-align: center;
   }
   #a-propos > p,
@@ -373,13 +376,6 @@ img {
   img {
     height: 150px;
     width: 300px;
-  }
-  #portfolio > h2,
-  #a-propos > h2,
-  #experiences > h2,
-  #projets > h2,
-  #contact > h2 {
-    margin-bottom: 10px;
   }
 }
 

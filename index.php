@@ -17,32 +17,29 @@
 
 </body>
 <div id="container">
-    <!-- le header qui contient notre entête de site (logo, nav etc) -->
     <header>
         <nav>
-            <!-- id = unique (1 seul par page ) -->
-            <i onclick="openMenu()" id="hamburger" class="fa-solid fa-bars"></i>
+            <i id="hamburger" class="fa-solid fa-bars"></i>
             <ul class="liste">
-                <!-- plusieurs classes possibles -->
                 <li>
-                    <a onclick="openMenu()" class="liens" href="#portfolio">Accueil</a>
+                    <a class="liens" href="#portfolio">Accueil</a>
                 </li>
                 <li>
-                    <a onclick="openMenu()" class="liens" href="#a-propos">A propos</a>
+                    <a class="liens" href="#a-propos">A propos</a>
                 </li>
                 <li>
-                    <a onclick="openMenu()" class="liens" href="#experiences">Expériences</a>
+                    <a class="liens" href="#experiences">Expériences</a>
                 </li>
                 <li>
-                    <a onclick="openMenu()" class="liens" href="#projets">Projets</a>
+                    <a class="liens" href="#projets">Projets</a>
                 </li>
                 <li>
-                    <a onclick="openMenu()" class="liens" href="#contact">Contact</a>
+                    <a class="liens" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- contenu principal changeant à chaque page -->
+    
     <main>
         <section id="portfolio">
             <h1>Mon portfolio</h1>
@@ -130,7 +127,7 @@
             </div> 
         </section>
     </main>
-    <!-- notre pied de page -->
+    
     <footer>
         
     </footer>
