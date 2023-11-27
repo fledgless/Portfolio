@@ -17,11 +17,11 @@ liens.forEach((liens) => {
 // fonction pour vérifier le formulaire de contact
 function validate() { 
     // récupération des forms
-    let name = document.getElementById("name").value; 
-    let subject = document.getElementById("subject").value; 
-    let email = document.getElementById("email").value; 
-    let message = document.getElementById("message").value; 
-    let error_message = document.getElementById("error_message"); 
+    let name = document.querySelector("#name").value; 
+    let subject = document.querySelector("#subject").value; 
+    let email = document.querySelector("#email").value; 
+    let message = document.querySelector("#message").value; 
+    let error_message = document.querySelector("#error_message"); 
     error_message.style.padding = "10px"; 
   
     let errors = []; 
