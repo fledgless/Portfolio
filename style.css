@@ -132,6 +132,18 @@ table {
 * {
   scroll-behavior: smooth;
 }
+
+:root {
+  --vh: 1vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
 /* mon commentaire  */
 header > nav,
 main,
@@ -148,7 +160,6 @@ main {
   background-color: black;
 }
 
-/* appel par id */
 div#container {
   display: grid;
   min-height: 100vh;
@@ -168,7 +179,7 @@ footer {
   height: 5vh;
   background-color: #406E8E;
 }
-/* appel par nom de balise */
+
 header > nav {
     display: flex;
     justify-content: center;
@@ -176,7 +187,6 @@ header > nav {
     align-items: center;
 }
 
-/* appel par classe */
 header > nav > ul.liste {
   flex-grow: 1;
   display: flex;
@@ -196,7 +206,7 @@ header > nav > i.fa-bars {
 
 section {
   height: fit-content;
-  padding-top: 5vh;
+  padding-top: 10vh;
   width: 100%;
   font-size: 16px;
   font-family: 'Prompt';
@@ -207,6 +217,35 @@ hr {
   background: white;
 }
 
+/* titres */
+h1 {
+  margin-top: 25vh;
+  margin-bottom: 3vh;
+  font-size: 64px;
+  color: #406E8E;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
+h2 {
+  margin: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  font-size: 32px;
+  font-family: 'Bebas Neue';
+  color: #406E8E ;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Bebas Neue';
+  color: white ;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+/* accueil */
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -224,6 +263,7 @@ hr {
   margin-top: 50px;
 }
 
+/* a-propos */
 #paragraphe {
   display: flex;
   flex-direction: column;
@@ -241,6 +281,7 @@ hr {
   align-items: center;
 }
 
+/* expériences */
 #experience {
   display: flex;
   flex-direction: column;
@@ -261,6 +302,7 @@ hr {
   align-items: center;
 }
 
+/* projets */
 img {
   height: 175px;
   width: 350px;
@@ -269,15 +311,9 @@ img {
   border: solid white;
 }
 
-#projet1,
-#projet2,
-#projet3 {
-  display: flex;
-  margin: 7vh;
-  margin-top: 10vh;
+.projet {
+  margin: 3vh;
   text-align: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 #projet {
@@ -294,23 +330,27 @@ img {
   justify-content: center;
 }
 
-#portfolio > h2,
-#a-propos > h2,
-#experiences > h2,
-#projets > h2,
-#contact > h2 {
-  margin: 15vh;
-  margin-top: 5vh;
-  margin-bottom: 3vh;
-  font-size: 32px;
-  font-family: 'Bebas Neue';
-  /* Bebas Neue */
-  color: #406E8E ;
-  margin-bottom: 5px;
-}
-
 /* media query */
 @media screen and (max-width: 768px) {
+  hr {
+    display: none;
+  }
+  #a-propos,
+  #experiences {
+    display: 	flex;
+    flex-direction: column;
+  }  
+  #a-propos > p,
+  #experience {
+    margin: 15px;
+  }  
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  section {
+    padding-top: 3vh;
+  }
   header > nav > ul.liste {
     display: none;
   }
@@ -331,65 +371,13 @@ img {
     flex-direction: column;
     display: flex;
   }
-  #a-propos,
-  #experiences {
-    display: 	flex;
-    flex-direction: column;
-  }
-  #a-propos > h2,
-  #experiences > h2 {
-    margin: 5vh;
-    text-align: center;
-  }
-  #a-propos > p,
-  #experience {
-    margin: 5vh;
-  }
-  #projet {
-    display: flex;
-    flex-direction: column;
-  }
-  #projet1,
-  #projet2,
-  #projet3 {
-    margin: 20px;
-  }
-  hr {
-    display: none;
-  }
   img {
     height: 150px;
     width: 300px;
   }
-  #portfolio > h2,
-  #a-propos > h2,
-  #experiences > h2,
-  #projets > h2,
-  #contact > h2 {
-    margin-bottom: 10px;
-  }
-}
-
-/* titres en général */
-h1 {
-  margin-top: 25vh;
-  margin-bottom: 3vh;
-  font-size: 64px;
-  color: #406E8E;
-  text-align: center;
-  font-family: 'Bebas Neue';
-}
-
-h3 {
-  font-size: 24px;
-  font-family: 'Bebas Neue';
-  color: white ;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
 }
 
 /* contact  */
-
 #contact {
   display: flex;
   flex-direction: column;
@@ -400,42 +388,58 @@ h3 {
   text-align: center;
 }
 
-form {
-  width: 400px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.5;
-}
+.form { 
+  display: flex;
+  align-items: center;
+  background: #000;  
+  justify-content: center;
+  flex-direction: column;
+} 
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
+.form .input_field { 
+  margin-bottom: 10px; 
+} 
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
+.form
+  .input_field 
+  input[type="text"], 
+.form textarea { 
+  border: 1px solid #e0e0e0; 
+  width: 100%; 
+  padding: 10px; 
+} 
 
-input[type="submit"] {
-  background-color: #406E8E;
-  color: white;
-  font-family: 'Prompt';
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
+.form textarea { 
+  resize: none; 
+  height: 80px; 
+} 
 
-input[type="submit"]:hover {
+button { 
+  border: 0px; 
+  margin-top: 15px; 
+  padding: 10px; 
+  text-align: center; 
+  width: 100%; 
+  background: #406E8E; 
+  color: #fcfbf7; 
+  text-transform: uppercase; 
+  letter-spacing: 5px; 
+  font-weight: bold; 
+  border-radius: 25px; 
+  cursor: pointer; 
+  margin-bottom: 50px;
+} 
+
+button:hover {
   background-color: white;
   color: #406E8E;
+}
+
+#error_message { 
+  margin-bottom: 20px; 
+  background: #406E8E; 
+  padding: 0px; 
+  text-align: center; 
+  font-size: 14px; 
+  transition: all 0.5s ease; 
 }
