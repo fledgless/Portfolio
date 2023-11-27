@@ -160,7 +160,6 @@ main {
   background-color: black;
 }
 
-/* appel par id */
 div#container {
   display: grid;
   min-height: 100vh;
@@ -180,7 +179,7 @@ footer {
   height: 5vh;
   background-color: #406E8E;
 }
-/* appel par nom de balise */
+
 header > nav {
     display: flex;
     justify-content: center;
@@ -188,7 +187,6 @@ header > nav {
     align-items: center;
 }
 
-/* appel par classe */
 header > nav > ul.liste {
   flex-grow: 1;
   display: flex;
@@ -208,18 +206,46 @@ header > nav > i.fa-bars {
 
 section {
   height: fit-content;
-  padding-top: 5vh;
+  padding-top: 10vh;
   width: 100%;
   font-size: 16px;
   font-family: 'Prompt';
   color: white ;
-  /* margin-top: 50px; */
 }
 
 hr {
   background: white;
 }
 
+/* titres */
+h1 {
+  margin-top: 25vh;
+  margin-bottom: 3vh;
+  font-size: 64px;
+  color: #406E8E;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
+h2 {
+  margin: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  font-size: 32px;
+  font-family: 'Bebas Neue';
+  color: #406E8E ;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Bebas Neue';
+  color: white ;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+/* accueil */
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -237,6 +263,7 @@ hr {
   margin-top: 50px;
 }
 
+/* a-propos */
 #paragraphe {
   display: flex;
   flex-direction: column;
@@ -254,6 +281,7 @@ hr {
   align-items: center;
 }
 
+/* expériences */
 #experience {
   display: flex;
   flex-direction: column;
@@ -274,6 +302,7 @@ hr {
   align-items: center;
 }
 
+/* projets */
 img {
   height: 175px;
   width: 350px;
@@ -282,15 +311,9 @@ img {
   border: solid white;
 }
 
-#projet1,
-#projet2,
-#projet3 {
-  display: flex;
-  margin: 7vh;
-  margin-top: 10vh;
+.projet {
+  margin: 3vh;
   text-align: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 #projet {
@@ -307,23 +330,27 @@ img {
   justify-content: center;
 }
 
-#portfolio > h2,
-#a-propos > h2,
-#experiences > h2,
-#projets > h2,
-#contact > h2 {
-  margin: 15vh;
-  margin-top: 5vh;
-  margin-bottom: 3vh;
-  font-size: 32px;
-  font-family: 'Bebas Neue';
-  /* Bebas Neue */
-  color: #406E8E ;
-  margin-bottom: 5px;
-}
-
 /* media query */
 @media screen and (max-width: 768px) {
+  hr {
+    display: none;
+  }
+  #a-propos,
+  #experiences {
+    display: 	flex;
+    flex-direction: column;
+  }  
+  #a-propos > p,
+  #experience {
+    margin: 15px;
+  }  
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  section {
+    padding-top: 3vh;
+  }
   header > nav > ul.liste {
     display: none;
   }
@@ -344,61 +371,13 @@ img {
     flex-direction: column;
     display: flex;
   }
-  #a-propos,
-  #experiences {
-    display: 	flex;
-    flex-direction: column;
-  }
-  #portfolio > h2,
-  #a-propos > h2,
-  #experiences > h2,
-  #projets > h2,
-  #contact > h2 {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  #a-propos > p,
-  #experience {
-    margin: 5vh;
-  }
-  #projet {
-    display: flex;
-    flex-direction: column;
-  }
-  #projet1,
-  #projet2,
-  #projet3 {
-    margin: 20px;
-  }
-  hr {
-    display: none;
-  }
   img {
     height: 150px;
     width: 300px;
   }
 }
 
-/* titres en général */
-h1 {
-  margin-top: 25vh;
-  margin-bottom: 3vh;
-  font-size: 64px;
-  color: #406E8E;
-  text-align: center;
-  font-family: 'Bebas Neue';
-}
-
-h3 {
-  font-size: 24px;
-  font-family: 'Bebas Neue';
-  color: white ;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-
 /* contact  */
-
 #contact {
   display: flex;
   flex-direction: column;
@@ -435,7 +414,7 @@ h3 {
   height: 80px; 
 } 
 
-.form .btn input[type="submit"] { 
+button { 
   border: 0px; 
   margin-top: 15px; 
   padding: 10px; 
@@ -451,7 +430,7 @@ h3 {
   margin-bottom: 50px;
 } 
 
-.form .btn input[type="submit"]:hover {
+button:hover {
   background-color: white;
   color: #406E8E;
 }
