@@ -129,6 +129,19 @@ table {
   border-spacing: 0;
 }
 
+@font-face{
+  font-family: "Prompt";
+  src: url("/fonts/prompt.eot");
+  src: url("/fonts/prompt.eot?#iefix")format("embedded-opentype"),
+      url("/fonts/prompt.woff")format("woff"),
+      url("/fonts/prompt.woff2")format("woff2"),
+      url("/fonts/prompt.ttf")format("truetype"),
+      url("/fonts/prompt.svg#Prompt")format("svg");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -144,7 +157,6 @@ body {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
-/* mon commentaire  */
 header > nav,
 main,
 footer {
@@ -404,7 +416,7 @@ img {
   .input_field 
   input[type="text"], 
 .form textarea { 
-  border: 1px solid #e0e0e0; 
+  border: 1px solid white; 
   width: 100%; 
   padding: 10px; 
 } 
@@ -437,9 +449,10 @@ button:hover {
 
 #error_message { 
   margin-bottom: 20px; 
+  width: 40%;
   background: #406E8E; 
   padding: 0px; 
   text-align: center; 
-  font-size: 14px; 
+  font-size: 16px; 
   transition: all 0.5s ease; 
 }

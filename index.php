@@ -53,7 +53,7 @@
         </section>
         <section id="a-propos">
             <h2>A-propos</h2>
-            <hr width="1" size="500"/>
+            <hr width="1" size="5"/>
             <div id="paragraphe">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi in temporibus non rem! Quod impedit vero voluptate perferendis repudiandae molestias ut tenetur, saepe, fuga a magni cumque debitis repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus nulla id totam commodi voluptates dignissimos rerum molestias officiis harum molestiae at accusamus dicta ad ex fuga, tempore facilis nemo.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis dolores quasi nam asperiores! Modi optio a hic provident reiciendis inventore ipsa quisquam non, quos temporibus quam saepe possimus sed veritatis?</p>
