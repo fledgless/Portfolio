@@ -157,7 +157,6 @@ body {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
-/* mon commentaire  */
 header > nav,
 main,
 footer {
